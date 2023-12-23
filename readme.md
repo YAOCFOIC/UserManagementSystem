@@ -32,4 +32,5 @@ Accede a la interfaz administrativa en http://127.0.0.1:8000/admin/ con las cred
 
 Recuerda adaptar la información según las necesidades específicas de tu proyecto.
 
-[Descargar Video](../tellmewhy.mp4)
+
+[Ver Video en Facebook](https://www.facebook.com/100005895122733/videos/377829711415156/)
