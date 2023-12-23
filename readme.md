@@ -32,7 +32,4 @@ Accede a la interfaz administrativa en http://127.0.0.1:8000/admin/ con las cred
 
 Recuerda adaptar la información según las necesidades específicas de tu proyecto.
 
-<video width="320" height="240" controls>
-  <source src="../tellmewhy.mp4" type="video/mp4">
-  Tu navegador no soporta el tag de video.
-</video>
+[Descargar Video](../tellmewhy.mp4)
