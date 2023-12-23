@@ -1,0 +1,59 @@
+{% extends "../father_template.html" %}
+{% load static %}
+{% load widget_tweaks %}
+{% block content %}
+<div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero page-inner overlay" >
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-9 text-center mt-5">
+          <h1 class="heading aos-init aos-animate" data-aos="fade-up">¡Register Now!</h1>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb text-center justify-content-center">
+              <li class="breadcrumb-item"><a href="/" class="nav-item nav-link">Home</a></li>
+              <li class="breadcrumb-item active text-black-50" aria-current="page">Register</li>
+            </ol>
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        
+      
+        <div class="col-lg-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+          <form  method="post" novaldiate>
+            {% csrf_token %}
+              <div class="row">
+                {% for field in form %}
+                
+                      <div class="col-6 mb-3">
+                        <label class="form-label" for="form3Example4cdg">{{ field.label_tag }}</label>
+                        {% render_field field|add_class:"form-control form-control-lg"%}
+                      </div>
+                        {% if field.errors %}
+                          <small class="error">{{ field.errors|striptags  }}</small> 
+                        {% endif %}
+                {% endfor %}
+                <div class="col-12">
+                  <input type="submit" value="Guardar" class="btn btn-primary">
+                </div>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+

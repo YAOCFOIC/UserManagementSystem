@@ -1,0 +1,26 @@
+#text-container {
+    position: absolute;
+    top: 20%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white;
+    font-size: 3vw; 
+    text-align: center;
+    transform: translate(-50%, -50%);
+    animation: fadeAnimation 5s infinite linear;
+}
+@keyframes fadeAnimation {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.5;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .text-container {
+      font-size: 2vw;
+      animation-duration: 2s;
+    }
+  }
