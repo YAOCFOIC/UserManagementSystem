@@ -11,16 +11,16 @@ install django==4.2.4
 
 ## Instalación
 
-Instala las dependencias necesarias:
-pip install mysqlclient
-pip install reportlab
-pip install djangorestframework
+**Instala las dependencias necesarias:**
+1. pip install mysqlclient
+2. pip install reportlab
+3. pip install djangorestframework
 
-Realiza las migraciones para configurar la base de datos:
-python manage.py migrate
+**Realiza las migraciones para configurar la base de datos:**
+1. python manage.py migrate
 
-Crea un superusuario para acceder a la interfaz administrativa:
-python manage.py createsuperuser
+**Crea un superusuario para acceder a la interfaz administrativa:**
+1. python manage.py createsuperuser
 Sigue las instrucciones en la consola para proporcionar el nombre de usuario, correo electrónico y contraseña del superusuario.
 
 ## Ejecución
@@ -31,3 +31,8 @@ python manage.py runserver
 Accede a la interfaz administrativa en http://127.0.0.1:8000/admin/ con las credenciales del superusuario.
 
 Recuerda adaptar la información según las necesidades específicas de tu proyecto.
+
+<video width="320" height="240" controls>
+  <source src="../tellmewhy.mp4" type="video/mp4">
+  Tu navegador no soporta el tag de video.
+</video>
